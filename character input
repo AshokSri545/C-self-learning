@@ -1,0 +1,28 @@
+Character Input
+Requested files: char.cpp (Download)
+Type of work: Individual work
+Write a program to print a character
+
+ INPUT & OUTPUT FORMAT: 
+
+Input consists of 1 character. Output consists of 1 character.
+
+Sample Input:
+
+A
+
+Sample Output:
+
+A
+
+
+coding
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    char C;
+    cin>>C;
+    cout<<C;
+}
