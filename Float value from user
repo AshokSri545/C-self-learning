@@ -7,11 +7,10 @@ Sample Output:
 Coding
 
 #include<iostream>
-#include<iomanip>
 using namespace std;
 int main()
 {
     float A;
     cin>>A;
-    cout<<setprecision(9)<<A;
+    cout<<A;
 }
