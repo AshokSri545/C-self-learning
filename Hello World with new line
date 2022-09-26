@@ -1,0 +1,20 @@
+Hello World with New Line
+Requested files: helloworld.cpp (Download)
+Type of work: Individual work
+Write a C program to print sample output.
+
+
+
+Sample Output :
+
+Hello World...!
+
+Hello World...!
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello World...!"<<'\n'<<"Hello World...!";
+}
