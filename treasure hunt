@@ -1,0 +1,46 @@
+The first input corresponds to the number of gold coins in the treasure. 
+
+The second input corresponds to Finn's share percentage 
+
+The last input is Stoneheart's share percentage. 
+
+OUTPUT FORMAT: 
+
+The output consists of three integers. 
+
+The first output integer corresponds to Short Fin's share. 
+
+The second integer corresponds to Stoneheart's share. 
+
+The last integer corresponds to other pirates share.
+
+Sample Input
+500
+
+25
+
+
+33
+
+Sample Output
+
+
+125
+123
+84
+
+
+coding
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e,f;
+    cin>>a>>b>>c;
+    d=(a*b)/100;
+    e=(((a-d)*c)/100);
+    f=(a-(d+e))/3;
+    cout<<d<<endl<<e<<endl<<f;
+}
