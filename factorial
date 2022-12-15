@@ -21,12 +21,13 @@ Sample Output:
 
 #include<iostream>
 using namespace std;
-int fact(int num)
-{
-    if(num==0)
-    return 1;
-    else
-    return num*fact(num-1);
+int fact(int n)
+{int f=1;
+    for(int i=1;i<=n;i++)
+    {
+         f=f*i;
+    }
+    return f;
 }
 int main()
 {
