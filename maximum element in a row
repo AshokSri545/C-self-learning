@@ -1,0 +1,60 @@
+The remaining integers correspond to the elements in the matrix. 
+
+The elements are read in row-wise order, the first row first, then second row and so on. 
+
+OUTPUT FORMAT:
+
+Output consists of the maximum element in all the rows.
+
+Sample Input:
+3
+
+3
+
+1 2 3
+
+4 5 6
+
+7 8 9
+
+Sample Output:
+
+3
+
+6
+
+9
+
+
+
+//coding
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int r,c;
+    cin>>r>>c;
+    int a[r][c];
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            if(a[0][0]<a[i][j])
+            {
+                
+                a[0][0]=a[i][j];
+            }
+          
+        }  cout<<a[0][0]<<endl;
+            a[0][0]=0;
+    }
+    
+}
