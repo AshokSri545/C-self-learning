@@ -1,0 +1,38 @@
+write a C program to find  Upper Triangular Matrix using 2D.
+
+Sample Input:
+3
+0 0 1
+0 2 3
+0 0 5
+
+Sample Output:
+
+Upper triangular matrix
+
+//coding
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int r;
+    cin>>r;
+    int a[r][r];
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<r;j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    if(a[r-2][r-r]==0 && a[r-1][r-r]==0 && a[r-1][r-2]==0)
+    {
+        cout<<"Upper triangular matrix";
+                
+    }
+    else 
+    {
+        cout<<"Not an Upper triangular matrix";
+    }
+}
