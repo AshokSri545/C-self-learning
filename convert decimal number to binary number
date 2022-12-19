@@ -1,0 +1,42 @@
+Write a C code to convert decimal number to binary number by recursion:
+
+Input & Output Format:
+
+Input consists of one decimal value.
+
+Output consists of the binary value.
+
+Sample Input
+20
+
+Sample Output
+
+
+Binary value of 20 is 10100
+
+//coding
+
+#include<iostream>
+using namespace std;
+int con(int n)
+{
+    int a[100],num=n;
+    int i=0;
+    while(n>0)
+    {
+        a[i]=n%2;
+        n=n/2;
+        i++;
+    }
+    cout<<"Binary value of "<<num<<" is ";
+    for(int j=i-1;j>=0;j--)
+    cout<<a[j];
+    cout<<endl;
+    return 0;
+}
+int main()
+{
+    int n;
+    cin>>n;
+    con(n);
+}
